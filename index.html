@@ -1,3 +1,29 @@
-<script>
-	window.location.href="https://surya.devweb.id"
-</script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Surya</title>
+
+	<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="./assets/styles/main.css">
+
+</head>
+
+<body onload="main()">
+	<div>
+		<sae-html src="./components/header.html"></sae-html>
+		<sae-html src="./components/main.html"></sae-html>
+		<sae-html src="./components/tabs.html"></sae-html>
+	</div>
+
+
+	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+	<script src="./node_modules/axios/dist/axios.min.js"></script>
+	<script src="./assets/js/main.js"></script>
+</body>
+
+</html>
