@@ -1,0 +1,13 @@
+<nav class="navbar navbar-expand-md navbar-light justify-content-between">
+	<a class="navbar-brand bold mx-3 cursor" (click)="goToHome()">Port<span class="text-info">polio</span></a>
+	<div class=" mx-3">
+		<ul class="navbar-nav inline-form">
+			<li class="nav-item">
+				<a [routerLink]="['/skill']" [routerLinkActive]="activeclass" class="nav-link">Skill</a>
+			</li>
+			<li class="nav-item">
+				<a [routerLink]="['/showcase']" [routerLinkActive]="activeclass" class="nav-link">Showcase</a>
+			</li>
+		</ul>
+	</div>
+</nav>
