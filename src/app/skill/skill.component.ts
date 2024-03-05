@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-skill',
@@ -10,8 +10,10 @@ import { Title } from '@angular/platform-browser';
 })
 export class SkillComponent {
   constructor(
-    private titleService: Title
+    private titleService: Title,
+    private meta: Meta,
   ) {
-    this.titleService.setTitle('Skill');
+    this.titleService.setTitle('Surya\'s Portpolio | Skill');
+    this.meta.updateTag({name: 'description', content: 'Something that I learn '})
   }
 }

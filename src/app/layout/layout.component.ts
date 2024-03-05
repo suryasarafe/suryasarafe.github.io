@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-layout',
@@ -10,8 +10,11 @@ import { Title } from '@angular/platform-browser';
 })
 export class LayoutComponent {
   constructor(
-    private titleService: Title
+    private titleService: Title,
+    private meta: Meta,
   ) {
-    this.titleService.setTitle('Home');
+    this.titleService.setTitle('Surya\'s Portpolio | Home');
+    this.meta.updateTag({name: 'description', content: 'Surya\'s Portpolio home screen'})
   }
+  linkImg:string = '/assets/images/background.png';
 }
