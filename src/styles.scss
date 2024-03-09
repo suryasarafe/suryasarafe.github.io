@@ -1,10 +1,13 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
 /* You can add global styles to this file, and also import other style files */
 .bg-gray {
     background-color: #ced8ce;
 }
+
 .bg-gray-badge {
     background-color: #a1aca1;
 }
+
 .cursor {
     cursor: pointer;
 }
@@ -14,11 +17,28 @@
 }
 
 .f16 {
-    font-size:larger;
+    font-size: larger;
 }
+
 .f14 {
     font-size: medium;
 }
+
 .f12 {
     font-size: small;
 }
+.icon-size {
+    height: 48px;
+    width: 48px;
+}
+.h300 {
+    min-height: 250px;
+}
+@include media-breakpoint-down(md) { 
+    .sbackground {
+        background-image: url('/assets/images/background.png');
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: color-burn;
+    }
+ }

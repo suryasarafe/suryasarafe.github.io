@@ -1,3 +1,21 @@
 <div class="container-fluid mt-5 pt-3">
-    <p>skill works!</p>
+	<div class="scontent">
+		<h1 class="f16">What I learn</h1>
+		<div class="container">
+			<div class="row">
+	
+				<div class="mb-2  col-xm-12 col-sm-6 col-md-4 text-center" *ngFor="let item of skillList">
+					<div class="card bg-gray border-0">
+						<div class="card-body h300">
+							<img class="img-fluid icon-size" [src]="item.img" [alt]="item.description" [title]="item.name">
+							<h2 class="f14">{{item.name}}</h2>
+							<p class="justify">
+								{{item.description}}
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

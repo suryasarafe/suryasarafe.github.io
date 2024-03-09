@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+declare var dataLayer: any;
 
 @Component({
   selector: 'app-layout',
