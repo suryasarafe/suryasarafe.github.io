@@ -1,44 +1,68 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
-/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: 'helvetica'; 
+  src: url('assets/fonts/Helvetica_Neue_LT_Std_55_Roman.otf') format('otf');
+  font-weight: normal; 
+  font-style: normal; 
+}
+* {
+	font-family: helvetica;
+}
 .bg-gray {
-    background-color: #ced8ce;
+	position: relative;
+	background-color: #ced8ce;
 }
 
 .bg-gray-badge {
-    background-color: #a1aca1;
+	background-color: #a1aca1;
 }
 
 .cursor {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .justify {
-    text-align: justify;
+	text-align: justify;
 }
 
 .f16 {
-    font-size: larger;
+	font-size: larger;
 }
 
 .f14 {
-    font-size: medium;
+	font-size: medium;
 }
 
 .f12 {
-    font-size: small;
+	font-size: small;
 }
+
 .icon-size {
-    height: 48px;
-    width: 48px;
+	height: 48px;
+	width: 48px;
 }
+
 .h300 {
-    min-height: 250px;
+	min-height: 250px;
 }
-@include media-breakpoint-down(md) { 
-    .sbackground {
-        background-image: url('/assets/images/background.png');
-        background-size: cover;
-        background-position: center;
-        background-blend-mode: color-burn;
-    }
- }
+
+@include media-breakpoint-down(md) {
+	.sbackground {
+		background-image: url('/assets/images/background.png');
+		background-size: cover;
+		background-position: center;
+		background-blend-mode: color-burn;
+	}
+}
+
+.bg-color {
+	background-color: #6776ED;
+}
+
+.text-color {
+	color: #6776ED;
+}
+.fullh {
+	min-height: 100vh;
+}

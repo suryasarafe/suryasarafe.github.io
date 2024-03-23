@@ -1,14 +1,14 @@
-<div class="container-fluid mt-5 pt-3">
-	<div class="scontent">
-		<h1 class="f16">What I learn</h1>
+<div class="container pt-5">
+	<div class="scontent mt-5">
+		<h1 class="f16">What <span class="text-color">I</span> learn</h1>
 		<div class="container">
 			<div class="row">
 	
-				<div class="mb-2  col-xm-12 col-sm-6 col-md-4 text-center" *ngFor="let item of skillList">
-					<div class="card bg-gray border-0">
+				<div class="mb-2  col-xm-12 col-sm-6 col-md-4 text-center" *ngFor="let item of skillList;let i = index;">
+					<div class="card bg-gray border-0 embos" *ngIf="show[i]" [@fadeInOutComponent]>
 						<div class="card-body h300">
-							<img class="img-fluid icon-size" [src]="item.img" [alt]="item.description" [title]="item.name">
-							<h2 class="f14">{{item.name}}</h2>
+							<img class="img-fluid icon-size mb-2" [src]="item.img" [alt]="item.description" [title]="item.name">
+							<h2 class="f16">{{item.name}}</h2>
 							<p class="justify">
 								{{item.description}}
 							</p>

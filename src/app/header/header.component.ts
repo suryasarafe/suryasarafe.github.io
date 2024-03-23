@@ -21,5 +21,5 @@ export class HeaderComponent {
   goToSkill() {
     this.router.navigate(['/skill']);
   }
-  activeclass:string[] = ['active', 'text-info'];
+  activeclass:string[] = ['active', 'text-color'];
 }

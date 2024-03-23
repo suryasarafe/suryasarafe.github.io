@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+import { fadeInOutComponent } from '../fadein.animation';
 
 interface Skills {
   name: string;
@@ -12,7 +13,8 @@ interface Skills {
   standalone: true,
   imports: [CommonModule],
   templateUrl: './skill.component.html',
-  styleUrl: './skill.component.scss'
+  styleUrl: './skill.component.scss',
+  animations: [fadeInOutComponent],
 })
 export class SkillComponent {
   constructor(
@@ -23,12 +25,22 @@ export class SkillComponent {
     this.meta.updateTag({ name: 'description', content: 'Surya\'s Portpolio | skill that i learn' })
     this.shuffleListItems();
   }
+  ngOnInit() {
+    for (let i = 0; i < this.skillList.length; i++) {
+      setTimeout(() => {
+        this.show[i]=true;
+      }, i*300);
+      
+    }
+  }
   shuffleListItems() {
     for (let i = this.skillList.length - 1; i > 0; i--) {
+      this.show[i]=false;
       const j = Math.floor(Math.random() * (i + 1));
       [this.skillList[i], this.skillList[j]] = [this.skillList[j], this.skillList[i]];
     }
   }
+  show:boolean[] = [];
   skillList: Skills[] = [
     {
       name: 'Angular',
@@ -63,7 +75,5 @@ export class SkillComponent {
       description: 'Express is a minimalist web framework for Node.js, used for building web applications and APIs. It\'s lightweight and highly customizable.',
       img: 'assets/images/express.png'
     },
-
-
   ]
 }
