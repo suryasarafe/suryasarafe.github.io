@@ -82,3 +82,11 @@ or set this `sudo nano /etc/sysctl.conf`
   vm.swappiness=10
   vm.vfs_cache_pressure=50
 ```
+
+## Install UI shadcn-ui
+
+Initialize
+- npx shadcn-ui@latest init
+
+Add a button component
+- npx shadcn-ui@latest add button
