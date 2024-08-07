@@ -41,7 +41,7 @@ export default function SkillSection() {
     },
     {
       name: "NodeJs",
-      description: "Node.js is an open-source, server-side JavaScript runtime environment",
+      description: "To write command line tools and for server-side scripting",
       image: 'https://github.com/nodejs.png',
       website: 'https://nodejs.org',
       myWork: [
@@ -86,6 +86,16 @@ export default function SkillSection() {
       myWork: [
         { enabled: true, title: 'API Comment', url: 'https://www.npmjs.com/package/youtube-api-comment' },
         { enabled: false, title: 'Video Streamer', url: '/' },
+      ]
+    },
+    {
+      name: "NextJs",
+      description: "Framework with server-side rendering and static website generation",
+      image: 'https://github.com/nextjs.png',
+      website: 'https://nextjs.org',
+      myWork: [
+        { enabled: true, title: 'Portpolio', url: '/' },
+        { enabled: false, title: 'Vending Machine', url: '/' },
       ]
     },
     {
