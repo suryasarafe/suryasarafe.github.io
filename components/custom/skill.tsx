@@ -51,7 +51,7 @@ export default function SkillSection() {
     },
     {
       name: "Vue.Js",
-      description: "Vue.js is a lightweight JavaScript framework for building user interfaces.",
+      description: "A lightweight JavaScript framework for building user interfaces.",
       image: 'https://github.com/vuejs.png',
       website: 'https://vuejs.org',
       myWork: [
@@ -114,7 +114,7 @@ export default function SkillSection() {
         {internalLink(work)}
       </div>
     } else {
-      return <div className="cursor-not-allowed hover:bg-slate-100 rounded-md px-2">
+      return <div className="cursor-not-allowed hover:bg-slate-100 rounded-md px-2" key={work.title}>
         <p className="text-slate-500">{work.title}</p>
       </div>
     }
