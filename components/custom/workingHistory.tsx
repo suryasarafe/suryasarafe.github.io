@@ -44,7 +44,7 @@ export default function WorkingHistory() {
       <div className="flex flex-wrap -px-4">
         {
           workingList.map((item, i) => {
-            return <div key={item.time} className="w-1/3 p-2">
+            return <div key={item.time} className="lg:w-1/3 w-full p-2">
               <Card className="hover:shadow-md">
                 <div className="">
                   <CardHeader className="text-left py-2">
@@ -57,15 +57,15 @@ export default function WorkingHistory() {
                               <FontAwesomeIcon icon={faCommentAlt} height={14} width={14} />
                             </div>
                           </DialogTrigger>
-                          <DialogContent className="sm:max-w-[425px]">
+                          <DialogContent className="sm:max-w-[400px]">
                             <DialogHeader>
                               <DialogTitle>
-                                <div className="flex flex-col">
+                                <div className="flex flex-col text-left">
                                   <p className="text-sm text-slate-400 font-normal">{item.time}</p>
                                   <p className="text-lg">{item.name}</p>
                                 </div>
                               </DialogTitle>
-                              <DialogDescription>
+                              <DialogDescription className="text-left">
                                 Working as {item.role}
                               </DialogDescription>
                             </DialogHeader>

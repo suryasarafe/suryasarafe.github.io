@@ -4,14 +4,14 @@ import Link from "next/link"
 export default function Footer() {
   return <section className="mt-4">
     <footer className="w-full h-10 bottom-0 border-t mb-4">
-      <div className="flex justify-between mt-3 mx-4 text-slate-400">
+      <div className="flex flex-col md:flex-row md:justify-between mt-3 mx-4 text-center text-slate-400">
         <div>
           <Link href="/" className="hover:bg-slate-200 rounded-md px-2">
             Surya Akhri Ramadhan 2024
           </Link>
         </div>
 
-        <div className="flex gap-4">
+        <div className="flex py-2 gap-4 justify-center">
 
           <div className="cursor-pointer hover:scale-110">
             <a href="https://github.com/suryasarafe" target="_blank">

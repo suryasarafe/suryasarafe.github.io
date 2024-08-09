@@ -67,3 +67,29 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  0% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: black;
+  }
+}
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden; /* Ensures the content is clipped to the box */
+  white-space: nowrap; /* Prevents wrapping */
+  border-right: 2px solid black; /* Cursor effect */
+  animation: typewriter 4s steps(40, end), blink 0.75s step-end infinite;
+}
