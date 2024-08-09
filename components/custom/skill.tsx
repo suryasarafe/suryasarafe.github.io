@@ -1,8 +1,8 @@
-import { Separator } from "@radix-ui/react-separator";
 import { Card, CardDescription, CardTitle } from "../ui/card";
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
+import { Separator } from "../ui/separator";
 
 type Work = {
   enabled: boolean
@@ -136,7 +136,7 @@ export default function SkillSection() {
       <div className="flex flex-wrap -mx-4 justify-center">
         {skillList.map((item) => {
           return <div className="w-full lg:w-1/3 mb-4 px-2" key={item.name}>
-            <Card className="border gap-4 shadow-md">
+            <Card className="border gap-4 shadow-md hover:shadow-lg">
               <div className="flex items-center space-x-4 rounded-md pt-4 px-4">
                 <Image src={item.image} title={item.name} alt={item.name} width={64} height={64} />
                 <div className="flex-1 space-y-1">
@@ -146,7 +146,7 @@ export default function SkillSection() {
               </div>
               <div className="flex flex-col">
                 <div className="w-[90%] mx-auto">
-                  <Separator className="mt-4 mb-0 border-t" />
+                  <Separator className="mt-4 mb-0" />
                 </div>
                 <div className="w-full flex min-h-10 justify-between items-center text-sm px-4">
                   <div className="text-slate-500">

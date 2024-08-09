@@ -1,3 +1,4 @@
+import Footer from "@/components/custom/footer";
 import Hero from "@/components/custom/hero";
 import SkillSection from "@/components/custom/skill";
 import WorkingHistory from "@/components/custom/workingHistory";
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero/>
       <SkillSection/>
       <WorkingHistory/>
+      <Footer/>
     </main>
   );
 }

@@ -1,4 +1,8 @@
 import { Card, CardDescription, CardHeader, CardTitle } from "../ui/card";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCommentAlt } from "@fortawesome/free-solid-svg-icons";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "../ui/dialog";
+import { Separator } from "../ui/separator";
 
 export default function WorkingHistory() {
   const workingList = [
@@ -24,7 +28,7 @@ export default function WorkingHistory() {
       name: 'PT. Intersolusi Teknologi Asia (BTS.ID)',
       role: 'Sr. Front-End Developer',
       description: 'PT Intersolusi Teknologi Asia also known as Bridge Technology Services. Assigned for design and developing some internal and confidential project, working on small and big team. The project itself have different purpose like reporting, reservation room, recruiter online, e-commerce designing using Angular or ReactJs. In most case i responsible for development, deploy and manage the app. Some app i use in this company: SVN for managing Document, Ticket, Test Case, Release Notes and others. Git for Code sharing and Versioning. NodeJs and it\'s dependency for Deploying.',
-      time: 'January 2017'
+      time: 'April 2018'
     },
     {
       name: 'PT. Appsensi Tiga Ribu',
@@ -33,17 +37,47 @@ export default function WorkingHistory() {
       time: 'Mar 2020'
     },
   ]
-  return <section className="min-h-screen-90 w-full justify-center px-4">
+
+  return <section className="min-h-screen-90 w-full justify-center px-4 mt-4">
     <div className="container">
       <h2 className="font-bold mb-4">Working History</h2>
-      <div className="flex flex-col -mx-4 justify-center">
+      <div className="flex flex-wrap -px-4">
         {
-          workingList.map(item => {
-            return <div className="w-full mb-4 px-2" key={item.time}>
-              <Card>
-                <div className="flex flex-col md:flex-row md:flex-warp">
-                  <CardHeader className="min-w-30 lg:w-1/3">
-                    <div className="text-slate-400 text-xs">{item.time}</div>
+          workingList.map((item, i) => {
+            return <div key={item.time} className="w-1/3 p-2">
+              <Card className="hover:shadow-md">
+                <div className="">
+                  <CardHeader className="text-left py-2">
+                    <div className="flex justify-between w-full text-slate-400">
+                      <div className="text-xs">{item.time}</div>
+                      <div>
+                        <Dialog>
+                          <DialogTrigger asChild>
+                            <div className="cursor-pointer hover:scale-110">
+                              <FontAwesomeIcon icon={faCommentAlt} height={14} width={14} />
+                            </div>
+                          </DialogTrigger>
+                          <DialogContent className="sm:max-w-[425px]">
+                            <DialogHeader>
+                              <DialogTitle>
+                                <div className="flex flex-col">
+                                  <p className="text-sm text-slate-400 font-normal">{item.time}</p>
+                                  <p className="text-lg">{item.name}</p>
+                                </div>
+                              </DialogTitle>
+                              <DialogDescription>
+                                Working as {item.role}
+                              </DialogDescription>
+                            </DialogHeader>
+                            <Separator/>
+                            <div className="">
+                              <p className="text-justify text-slate-500 text-sm">{item.description}</p>
+                            </div>
+                          </DialogContent>
+                        </Dialog>
+
+                      </div>
+                    </div>
                     <CardTitle>
                       {item.role}
                     </CardTitle>
@@ -51,9 +85,6 @@ export default function WorkingHistory() {
                       {item.name}
                     </CardDescription>
                   </CardHeader>
-                  <div className="w-full p-6">
-                    {item.description}
-                  </div>
                 </div>
               </Card>
             </div>
