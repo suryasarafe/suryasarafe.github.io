@@ -13,3 +13,12 @@ Just a Web Developer from Bandung
 ## Source
 - [Image 1](https://pngtree.com/freepng/illustration-of-a-man-working-on-a-laptop_5361915.html)
 
+## Live URL
+
+- on [Vercel](https://suryasarafe.vercel.app)
+- on [Netlify](https://suryasarafe.netlify.app)
+- on [Github](https://suryasarafe.github.com)
+
+
+## Others
+[DigitalOcean Referral URL](https://www.digitalocean.com/?refcode=5bfff24ae113)
