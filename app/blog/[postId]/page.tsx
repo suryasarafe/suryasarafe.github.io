@@ -19,6 +19,18 @@ export async function generateMetadata({ params: { postId } }: BlogPostProps): P
   }
 }
 
+// for working with expored project / static page, change to export in next.config.js
+export async function generateStaticParams() {
+  const API_KEY = process.env.API_KEY;
+  const BLOG_ID = process.env.BLOG_ID;
+  const API_URL = `https://www.googleapis.com/blogger/v3/blogs/${BLOG_ID}/posts?key=${API_KEY}&&fields=items.id,items.title,items.labels,items.published`;
+  const res = await fetch(API_URL);
+  const datas = await res.json();
+  return datas.items.map((data: BlogPostData) => ({
+    postId: data!.id?.toString()
+  }));
+}
+
 export default async function BlogDetail({ params: { postId } }: BlogPostProps) {
   const API_KEY = process.env.API_KEY;
   const BLOG_ID = process.env.BLOG_ID;

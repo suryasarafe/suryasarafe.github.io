@@ -26,7 +26,7 @@ export default function DetailBlogContainer({ data: { item } }: { data: { item: 
       clearTimeout(timer2);
       clearTimeout(timer3);
     }
-  }, []);
+  }, [item]);
 
   return (
     <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">

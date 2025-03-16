@@ -1,9 +1,8 @@
 import datas from '@/app/experience/working-history.json';
 import NotFoundContainerComponent from '@/components/custom/not-found.component';
-import { ParamsId } from "@/lib/interface";
+import { Experience, ParamsId } from "@/lib/interface";
 import { Metadata } from 'next';
 import DetailContainerComponent from './detail-container.component';
-import SkillSection from '@/components/custom/skill';
 import SkillContainerComponent from './skill-container.component';
 
 
@@ -15,16 +14,24 @@ export async function generateMetadata({ params }: ParamsId): Promise<Metadata> 
   };
 }
 
-export default function DetailExperience({ params }: ParamsId) {
-  const data = datas.find((item) => item.id === Number(params.id));
+export async function generateStaticParams() {
+  const params = datas.map((data: Experience) => ({
+    id: data.id.toString()
+  }));
+  return params;
+}
+
+export default async function DetailExperience({ params }: ParamsId) {
+  const id = await params.id;
+  const data = datas.find((item) => item.id === Number(id));
 
   if (!data) {
     return <NotFoundContainerComponent />
   }
   return (
     <div>
-      <DetailContainerComponent item={data}/>
-      <SkillContainerComponent item={data}/>
+      <DetailContainerComponent item={data} />
+      <SkillContainerComponent item={data} />
     </div>
   );
 }
