@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faInstagram, faLinkedin, faGooglePlay } from "@fortawesome/free-brands-svg-icons"
 import Link from "next/link"
 export default function Footer() {
-  return <section className="mt-4">
+  return <section className="">
     <footer className="w-full h-10 bottom-0 border-t mb-4">
       <div className="flex flex-col md:flex-row md:justify-between mt-3 mx-4 text-center text-slate-400">
         <div>

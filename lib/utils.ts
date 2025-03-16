@@ -9,5 +9,7 @@ export interface BlogPostData {
   id?: string
   userId?: string
   title: string
-  body: string
+  content: string
+  published: string
+  labels: string[]
 }

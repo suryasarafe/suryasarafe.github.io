@@ -39,7 +39,7 @@ export default function LoginContainerComponent() {
         <div className={`absolute inset-0 bg-gradient-to-r from-green-300 to-green-600 shadow-lg transition-all ${css} sm:rounded-3xl`}></div>
         <div className={`relative px-4 py-8 bg-white shadow-md hover:shadow-lg sm:rounded-3xl sm:p-20 transition-all ${css2}`}>
           <div className="max-w-md mx-auto">
-            <div className="flex justify-center -mt-[8rem]">
+            <div className="flex justify-center -mt-[6rem] sm:-mt-[8rem]">
               <Image alt="Profile" src="/profile.jpeg" title="Profile"
                 className={`${css3} rounded-full shadow-md hover:shadow-lg transition-all hover:scale-105 border border-white`}
                 width={150}
