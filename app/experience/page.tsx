@@ -1,4 +1,3 @@
-import WorkingHistory from "@/components/custom/workingHistory";
 import { Metadata } from "next";
 import WorkingExperience from './working-history.json';
 import { Experience } from "@/lib/interface";
@@ -43,7 +42,6 @@ export default function ExperiencePage() {
           </div>
         </div>
       </section>
-      <WorkingHistory />
     </div>
   );
 }
