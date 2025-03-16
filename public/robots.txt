@@ -1,0 +1,9 @@
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: DuckDuckBot
+User-agent: Baiduspider
+User-agent: YandexBot
+Disallow: /_next/
+
+User-agent: *
+Disallow: /_next/
