@@ -1,15 +1,9 @@
-import Footer from "@/components/custom/footer";
-import Hero from "@/components/custom/hero";
-import SkillSection from "@/components/custom/skill";
-import WorkingHistory from "@/components/custom/workingHistory";
+import Profile from "@/components/custom/profile";
 
 export default function Home() {
   return (
     <main>
-      <Hero/>
-      <SkillSection/>
-      <WorkingHistory/>
-      <Footer/>
+      <Profile/>
     </main>
   );
 }
