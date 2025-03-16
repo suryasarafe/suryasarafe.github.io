@@ -29,3 +29,12 @@ Just a Web Developer from Bandung
 - type `touch out/.nojekyll` because GitHub Pages ignores _next/ files by default.
 - For dynamic page makesure to use generateStaticParams before export
 - then `npm run build`
+
+
+## Vercel Deploy only from specipyc branch
+- go to vercel -> project -> setting - git section
+- in the "Ignored build step" select behaviour "custom" then use 
+
+  `[ "$VERCEL_GIT_COMMIT_REF" != "main" ] && echo "Skipping deploy for branch $VERCEL_GIT_COMMIT_REF" && exit 0`
+
+  this will only trigger deployment when commit to `main` branch, you can also change the branch as needed
