@@ -227,7 +227,7 @@
     "id": 6,
     "date": "Jan 2022",
     "position": "Freelance",
-    "company": "Multi Company",
+    "company": "Multiple Client and Employeer",
     "description": "I continuously learn and develop various applications using multiple libraries and frameworks, tailoring solutions to meet client needs efficiently and effectively.",
     "skill": [
       {
@@ -269,6 +269,10 @@
             "url": "/"
           },
           {
+            "name": "Sae Money Manager (Web)",
+            "url": "https://sae-money-manager-web.vercel.app"
+          },
+          {
             "name": "Novel Books (Web)",
             "url": ""
           }
@@ -280,6 +284,10 @@
         "project": [
           {
             "name": "Novel Books (API)",
+            "url": ""
+          },
+          {
+            "name": "Sae Money Manager (API)",
             "url": ""
           }
         ]

@@ -4,13 +4,14 @@ import { Experience, ParamsId } from "@/lib/interface";
 import { Metadata } from 'next';
 import DetailContainerComponent from './detail-container.component';
 import SkillContainerComponent from './skill-container.component';
+import { truncateText } from '@/lib/utils';
 
 
 export async function generateMetadata({ params }: ParamsId): Promise<Metadata> {
   const pageData = datas.find((item) => item.id === Number(params.id));
   return {
-    title: pageData ? `Working at ${pageData.company}` : 'Page Not Found',
-    description: pageData ? pageData.description : "Page youre looking for cannot be found or have been moved"
+    title: pageData ? truncateText(`Working at ${pageData.company}`) : 'Page Not Found',
+    description: pageData ? truncateText(pageData.description) : "Page youre looking for cannot be found or have been moved"
   };
 }
 

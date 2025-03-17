@@ -61,10 +61,11 @@ export default function LoginContainerComponent() {
               </a>
             </div>
 
-            <div className="text-center">
-
+            <div className="flex justify-center">
               <Link href="/experience" className="">
-                <div className="w-48 mx-auto text-gray-400 rounded p-2 text-center shadow-md hover:shadow-lg transition-all hover:font-semibold">Working Experience</div>
+                <div className="w-48 text-gray-400 rounded p-2 text-center shadow-md hover:shadow-lg transition-all hover:text-green-700">
+                  Working Experience
+                </div>
               </Link>
             </div>
 

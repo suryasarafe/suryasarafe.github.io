@@ -13,7 +13,7 @@ export default function ExperiencePage() {
     <div>
       <section>
         <div className="bg-gray-50 text-gray-600 py-4">
-          <div className="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-12">
+          <div className="px-2 sm:px-8 mx-auto flex flex-col items-start md:flex-row my-12 md:my-12">
             
             <div className="flex flex-col w-full sticky md:top-24 lg:w-1/4 mt-2 md:mt-6 px-8">
               <h1 className="text-green-600 uppercase font-semibold">Working Experience</h1>
@@ -23,8 +23,8 @@ export default function ExperiencePage() {
             </div>
 
             <div className="ml-0 md:ml-12 lg:w-3/4 sticky">
-              <div className="container mx-auto w-full h-full">
-                <div className="relative wrap overflow-hidden pl-10 pr-10 pb-10 pt-5 h-full">
+              <div className="px-1 sm:px-8 mx-auto w-full h-full">
+                <div className="relative wrap overflow-hidden pl-0 pr-0 sm:pl-10 sm:pr-10 pb-10 pt-5 h-full">
                   <div className="border border-green-600 absolute h-full left-line"></div>
                   <div className="border border-green-600 absolute h-full right-line"></div>
 

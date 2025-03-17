@@ -13,3 +13,7 @@ export interface BlogPostData {
   published: string
   labels: string[]
 }
+
+export function truncateText(text: string, max: number = 156) {
+  return text.length > max ? `${text.substring(0, max)} ...` : text;
+};

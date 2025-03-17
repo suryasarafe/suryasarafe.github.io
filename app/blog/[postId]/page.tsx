@@ -1,5 +1,5 @@
 import NotFoundContainerComponent from "@/components/custom/not-found.component";
-import { BlogPostData } from "@/lib/utils";
+import { BlogPostData, truncateText } from "@/lib/utils";
 import { Metadata } from "next";
 import DetailBlogContainer from "./detail-blog.container";
 import Footer from "@/components/custom/footer";
@@ -14,8 +14,8 @@ export async function generateMetadata({ params: { postId } }: BlogPostProps): P
   const res = await fetch(API_URL);
   const data: BlogPostData = await res.json();
   return {
-    title: data.title ?? 'Not Found',
-    description: data.content ?? 'Page Not Found',
+    title: truncateText(data.title) ?? 'Not Found',
+    description: truncateText(data.content) ?? 'Page Not Found',
   }
 }
 
@@ -40,7 +40,7 @@ export default async function BlogDetail({ params: { postId } }: BlogPostProps) 
     return <NotFoundContainerComponent />
   }
   const data: BlogPostData = await res.json();
-  return <div>
+  return <div className="w-full">
     <DetailBlogContainer data={{ item: data }} />
     <Footer />
   </div>

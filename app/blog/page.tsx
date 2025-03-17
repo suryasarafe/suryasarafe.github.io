@@ -2,21 +2,11 @@ import Footer from "@/components/custom/footer"
 import ItemBlog from "@/components/custom/itemBlog"
 import NotFoundContainerComponent from "@/components/custom/not-found.component"
 import { Separator } from "@/components/ui/separator"
-import { BlogPostData } from "@/lib/utils"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Blog Page",
   description: "I share more about me, what I do, What I learn and some unnecessary necessary thing"
-}
-const dataSimplify = (data: BlogPostData[]) => {
-  const result = []
-  for (let i = 0; i < data.length; i++) {
-    result.push(
-      <ItemBlog data={data[i]} />
-    )
-  }
-  return result
 }
 
 export default async function BlogPage() {
