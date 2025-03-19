@@ -26,9 +26,9 @@ Just a Web Developer from Bandung
 
 ## Deploying on github
 - open next.config.mjs set output to export
-- type `touch out/.nojekyll` because GitHub Pages ignores _next/ files by default.
 - For dynamic page makesure to use generateStaticParams before export
 - then `npm run build`
+- type `touch out/.nojekyll` because GitHub Pages ignores _next/ files by default.
 
 
 ## Vercel Deploy only from specipyc branch

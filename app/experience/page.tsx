@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import WorkingExperience from './working-history.json';
 import { Experience } from "@/lib/interface";
 import ItemExperience from "./item.component";
+import Footer from "@/components/custom/footer";
 
 export const metadata: Metadata = {
   title: "Working Experience",
@@ -42,6 +43,7 @@ export default function ExperiencePage() {
           </div>
         </div>
       </section>
+      <Footer/>
     </div>
   );
 }

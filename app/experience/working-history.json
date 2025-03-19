@@ -1,229 +1,5 @@
 [
   {
-    "id": 1,
-    "date": "June 2015",
-    "position": "Web Developer",
-    "company": "PT. TERRALOGIQ INTEGRASI SOLUSI",
-    "description": "Terralogiq is a Tech Company and Google Cloud Partner that provides Geospatial, Location Intelligence and Mobility Solutions in Indonesia. Responsible developing Denpasar Smartcity(Demo version), Website for displaying location on map with border and POI (Point Of Interest), using JQuery and PHP.",
-    "skill": [
-      {
-        "name": "JQuery",
-        "description": "I use JavaScript for designing interactive user interfaces, handling AJAX responses for seamless data fetching, and integrating various APIs to enhance functionality and user experience.",
-        "project": [
-          {
-            "name": "Smart Bin",
-            "url": ""
-          },
-          {
-            "name": "Denpasar Smartcity",
-            "url": ""
-          }
-        ]
-      },
-      {
-        "name": "Zend",
-        "description": "I am exploring Zend Framework to understand its structure, MVC architecture, and how it facilitates building scalable and secure PHP applications.",
-        "project": []
-      },
-      {
-        "name": "Polymer",
-        "description": "I used Polymer to develop a dynamic and responsive landing page for a company, leveraging web components to create reusable and modular UI elements for a seamless user experience.",
-        "project": [
-          {
-            "name": "Landing Page",
-            "url": ""
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "date": "March 2016",
-    "position": "PHP Programer",
-    "company": "PT. SWAMEDIA INFORMATIKA",
-    "description": "Working in wide variety business applications such as Telecommunication System, Management Report System, Electrical System, Key Performance Indicator ( KPI ) System and Event Organizer. Assigned to developing Web App for e-commerce, known as TDA Mart using PHP and Code Igniter.",
-    "skill": [
-      {
-        "name": "Code Igniter.",
-        "description": "I used CodeIgniter to develop an e-commerce website, implementing a lightweight and efficient MVC structure for managing products, user authentication, and secure payment processing.",
-        "project": [
-          {
-            "name": "TDA Mart",
-            "url": "https://tdamart.com"
-          }
-        ]
-      },
-      {
-        "name": "MySQL",
-        "description": "I use MySQL to store and manage data for the e-commerce website, ensuring efficient data handling with optimized queries. Additionally, I utilize stored procedures for complex operations to enhance performance and maintainability.",
-        "project": [
-          {
-            "name": "TDA Mart",
-            "url": "https://tdamart.com"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "date": "January 2017",
-    "position": "Front-End Developer",
-    "company": "PT. INDISMART KREATIF IDEA",
-    "description": "PT. Indismart Kreatif Idea is a member of Smart City Community and Innovation Center - Intitut Teknologi Bandung. Assigned to design and develop the system and device internet of thing (IOT) for street lighting. Work in small team to develop Internet of Things(IoT) Product. Designing Web Dashboard that can monitor and controling device using AngularJS.",
-    "skill": [
-      {
-        "name": "AngularJS",
-        "description": "I used AngularJS to develop a website, from the landing page to the dashboard, ensuring a dynamic and responsive user experience. Additionally, I integrated an IoT module for real-time data monitoring and interaction.",
-        "project": [
-          {
-            "name": "Shpere Dashboard",
-            "url": ""
-          },
-          {
-            "name": "Smart PJU",
-            "url": ""
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "date": "April 2018",
-    "position": "Sr. Front-End Developer",
-    "company": "PT. Intersolusi Teknologi Asia (BTS.ID)",
-    "description": "PT Intersolusi Teknologi Asia also known as Bridge Technology Services. Assigned for design and developing some internal and confidential project, working on small and big team. The project itself have different purpose like reporting, reservation room, recruiter online, e-commerce designing using Angular or ReactJs. In most case i responsible for development, deploy and manage the app. Some app i use in this company: SVN for managing Document, Ticket, Test Case, Release Notes and others. Git for Code sharing and Versioning. NodeJs for deploying.",
-    "skill": [
-      {
-        "name": "SVN",
-        "description": "I use SVN for document versioning, managing change requests (CR), testing documents, and other project files to ensure seamless collaboration, version tracking, and document integrity in the development process.",
-        "project": []
-      },
-      {
-        "name": "GIT",
-        "description": "I use GIT for version control and code management in collaborative programming, ensuring smooth tracking of changes, conflict resolution, and maintaining code integrity across the development team.",
-        "project": []
-      },
-      {
-        "name": "Angular",
-        "description": "I use Angular to develop landing pages and e-commerce websites, ensuring a dynamic, responsive, and interactive user experience with a scalable and maintainable architecture.",
-        "project": [
-          {
-            "name": "Landing Page (confidential)",
-            "url": ""
-          },
-          {
-            "name": "E-Commerce (confidential)",
-            "url": ""
-          },
-          {
-            "name": "Trend App (Internal)",
-            "url": ""
-          }
-        ]
-      },
-      {
-        "name": "ReactJs",
-        "description": "I use ReactJS to develop micro websites that are lightweight, visually appealing, and powerful, ensuring a smooth and responsive user experience with efficient component-based architecture.",
-        "project": [
-          {
-            "name": "Bonus Page (confidential)",
-            "url": ""
-          },
-          {
-            "name": "Landing Page (confidential)",
-            "url": ""
-          }
-        ]
-      },
-      {
-        "name": "Redis",
-        "description": "I use Redis to power real-time chat functionality, ensuring fast message delivery, low latency, and efficient data handling with its in-memory storage and pub/sub mechanism.",
-        "project": [
-          {
-            "name": "Customer Service (Bot)",
-            "url": ""
-          }
-        ]
-      },
-      {
-        "name": "NodeJS",
-        "description": "I use Node.js for building scalable applications and PM2 for deploying and managing them, ensuring efficient process management, auto-restarts, and load balancing for high availability.",
-        "project": [
-          {
-            "name": "E-Commerce (confidential)",
-            "url": ""
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "date": "Mar 2020",
-    "position": "Full-stack Developer",
-    "company": "PT. Appsensi Tiga Ribu",
-    "description": "Assigned for developing Webpage for Manage User, Attendance Report then integrate it with the Realtime data using VueJs, NodeJs and FireStore, also responsible for develop and design Billing Report using NodeJs, BigQuery, Google Spreadsheets.",
-    "skill": [
-      {
-        "name": "VueJs",
-        "description": "I use Vue.js to develop an admin dashboard web application, creating a responsive and dynamic interface with efficient state management and component-based architecture for a seamless user experience.",
-        "project": [
-          {
-            "name": "Admin Appsensi",
-            "url": ""
-          }
-        ]
-      },
-      {
-        "name": "NodeJs",
-        "description": "I use Node.js to generate APIs for reporting, enabling data retrieval and processing. Additionally, I implement functionality for import from spreadsheets and export to Excel, ensuring efficient data sharing and analysis.",
-        "project": [
-          {
-            "name": "Reporting",
-            "url": ""
-          },
-          {
-            "name": "Onboarding",
-            "url": ""
-          }
-        ]
-      },
-      {
-        "name": "Firebase",
-        "description": "I use Firebase Firestore for managing user data and Firebase Authentication for secure user authentication, ensuring seamless access control and real-time data synchronization.",
-        "project": [
-          {
-            "name": "Admin Appsensi",
-            "url": ""
-          }
-        ]
-      },
-      {
-        "name": "BigQuery",
-        "description": "I use BigQuery to generate monthly and annual reporting data, leveraging its powerful data processing capabilities for efficient querying, analysis, and insights on large datasets.",
-        "project": [
-          {
-            "name": "Reporting",
-            "url": ""
-          }
-        ]
-      },
-      {
-        "name": "Nuxt.js",
-        "description": "I use Nuxt.js to develop company landing pages, ensuring fast performance, SEO optimization, and a smooth user experience with server-side rendering (SSR) and static site generation (SSG).",
-        "project": [
-          {
-            "name": "Appsensi Landing Page",
-            "url": "https://appsensi.com"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": 6,
     "date": "Jan 2022",
     "position": "Freelance",
@@ -339,6 +115,233 @@
           },
           {
             "name": "Radio Chat",
+            "url": ""
+          }
+        ]
+      }
+    ]
+  },
+
+  
+  {
+    "id": 5,
+    "date": "Mar 2020",
+    "position": "Full-stack Developer",
+    "company": "PT. Appsensi Tiga Ribu",
+    "description": "Assigned for developing Webpage for Manage User, Attendance Report then integrate it with the Realtime data using VueJs, NodeJs and FireStore, also responsible for develop and design Billing Report using NodeJs, BigQuery, Google Spreadsheets.",
+    "skill": [
+      {
+        "name": "VueJs",
+        "description": "I use Vue.js to develop an admin dashboard web application, creating a responsive and dynamic interface with efficient state management and component-based architecture for a seamless user experience.",
+        "project": [
+          {
+            "name": "Admin Appsensi",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "NodeJs",
+        "description": "I use Node.js to generate APIs for reporting, enabling data retrieval and processing. Additionally, I implement functionality for import from spreadsheets and export to Excel, ensuring efficient data sharing and analysis.",
+        "project": [
+          {
+            "name": "Reporting",
+            "url": ""
+          },
+          {
+            "name": "Onboarding",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "Firebase",
+        "description": "I use Firebase Firestore for managing user data and Firebase Authentication for secure user authentication, ensuring seamless access control and real-time data synchronization.",
+        "project": [
+          {
+            "name": "Admin Appsensi",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "BigQuery",
+        "description": "I use BigQuery to generate monthly and annual reporting data, leveraging its powerful data processing capabilities for efficient querying, analysis, and insights on large datasets.",
+        "project": [
+          {
+            "name": "Reporting",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "Nuxt.js",
+        "description": "I use Nuxt.js to develop company landing pages, ensuring fast performance, SEO optimization, and a smooth user experience with server-side rendering (SSR) and static site generation (SSG).",
+        "project": [
+          {
+            "name": "Appsensi Landing Page",
+            "url": "https://appsensi.com"
+          }
+        ]
+      }
+    ]
+  },
+  
+  {
+    "id": 4,
+    "date": "April 2018",
+    "position": "Sr. Front-End Developer",
+    "company": "PT. Intersolusi Teknologi Asia (BTS.ID)",
+    "description": "PT Intersolusi Teknologi Asia also known as Bridge Technology Services. Assigned for design and developing some internal and confidential project, working on small and big team. The project itself have different purpose like reporting, reservation room, recruiter online, e-commerce designing using Angular or ReactJs. In most case i responsible for development, deploy and manage the app. Some app i use in this company: SVN for managing Document, Ticket, Test Case, Release Notes and others. Git for Code sharing and Versioning. NodeJs for deploying.",
+    "skill": [
+      {
+        "name": "SVN",
+        "description": "I use SVN for document versioning, managing change requests (CR), testing documents, and other project files to ensure seamless collaboration, version tracking, and document integrity in the development process.",
+        "project": []
+      },
+      {
+        "name": "GIT",
+        "description": "I use GIT for version control and code management in collaborative programming, ensuring smooth tracking of changes, conflict resolution, and maintaining code integrity across the development team.",
+        "project": []
+      },
+      {
+        "name": "Angular",
+        "description": "I use Angular to develop landing pages and e-commerce websites, ensuring a dynamic, responsive, and interactive user experience with a scalable and maintainable architecture.",
+        "project": [
+          {
+            "name": "Landing Page (confidential)",
+            "url": ""
+          },
+          {
+            "name": "E-Commerce (confidential)",
+            "url": ""
+          },
+          {
+            "name": "Trend App (Internal)",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "ReactJs",
+        "description": "I use ReactJS to develop micro websites that are lightweight, visually appealing, and powerful, ensuring a smooth and responsive user experience with efficient component-based architecture.",
+        "project": [
+          {
+            "name": "Bonus Page (confidential)",
+            "url": ""
+          },
+          {
+            "name": "Landing Page (confidential)",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "Redis",
+        "description": "I use Redis to power real-time chat functionality, ensuring fast message delivery, low latency, and efficient data handling with its in-memory storage and pub/sub mechanism.",
+        "project": [
+          {
+            "name": "Customer Service (Bot)",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "NodeJS",
+        "description": "I use Node.js for building scalable applications and PM2 for deploying and managing them, ensuring efficient process management, auto-restarts, and load balancing for high availability.",
+        "project": [
+          {
+            "name": "E-Commerce (confidential)",
+            "url": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "date": "January 2017",
+    "position": "Front-End Developer",
+    "company": "PT. INDISMART KREATIF IDEA",
+    "description": "PT. Indismart Kreatif Idea is a member of Smart City Community and Innovation Center - Intitut Teknologi Bandung. Assigned to design and develop the system and device internet of thing (IOT) for street lighting. Work in small team to develop Internet of Things(IoT) Product. Designing Web Dashboard that can monitor and controling device using AngularJS.",
+    "skill": [
+      {
+        "name": "AngularJS",
+        "description": "I used AngularJS to develop a website, from the landing page to the dashboard, ensuring a dynamic and responsive user experience. Additionally, I integrated an IoT module for real-time data monitoring and interaction.",
+        "project": [
+          {
+            "name": "Shpere Dashboard",
+            "url": ""
+          },
+          {
+            "name": "Smart PJU",
+            "url": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "date": "March 2016",
+    "position": "PHP Programer",
+    "company": "PT. SWAMEDIA INFORMATIKA",
+    "description": "Working in wide variety business applications such as Telecommunication System, Management Report System, Electrical System, Key Performance Indicator ( KPI ) System and Event Organizer. Assigned to developing Web App for e-commerce, known as TDA Mart using PHP and Code Igniter.",
+    "skill": [
+      {
+        "name": "Code Igniter.",
+        "description": "I used CodeIgniter to develop an e-commerce website, implementing a lightweight and efficient MVC structure for managing products, user authentication, and secure payment processing.",
+        "project": [
+          {
+            "name": "TDA Mart",
+            "url": "https://tdamart.com"
+          }
+        ]
+      },
+      {
+        "name": "MySQL",
+        "description": "I use MySQL to store and manage data for the e-commerce website, ensuring efficient data handling with optimized queries. Additionally, I utilize stored procedures for complex operations to enhance performance and maintainability.",
+        "project": [
+          {
+            "name": "TDA Mart",
+            "url": "https://tdamart.com"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "date": "June 2015",
+    "position": "Web Developer",
+    "company": "PT. TERRALOGIQ INTEGRASI SOLUSI",
+    "description": "Terralogiq is a Tech Company and Google Cloud Partner that provides Geospatial, Location Intelligence and Mobility Solutions in Indonesia. Responsible developing Denpasar Smartcity(Demo version), Website for displaying location on map with border and POI (Point Of Interest), using JQuery and PHP.",
+    "skill": [
+      {
+        "name": "JQuery",
+        "description": "I use JavaScript for designing interactive user interfaces, handling AJAX responses for seamless data fetching, and integrating various APIs to enhance functionality and user experience.",
+        "project": [
+          {
+            "name": "Smart Bin",
+            "url": ""
+          },
+          {
+            "name": "Denpasar Smartcity",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "Zend",
+        "description": "I am exploring Zend Framework to understand its structure, MVC architecture, and how it facilitates building scalable and secure PHP applications.",
+        "project": []
+      },
+      {
+        "name": "Polymer",
+        "description": "I used Polymer to develop a dynamic and responsive landing page for a company, leveraging web components to create reusable and modular UI elements for a seamless user experience.",
+        "project": [
+          {
+            "name": "Landing Page",
             "url": ""
           }
         ]

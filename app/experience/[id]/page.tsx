@@ -5,6 +5,7 @@ import { Metadata } from 'next';
 import DetailContainerComponent from './detail-container.component';
 import SkillContainerComponent from './skill-container.component';
 import { truncateText } from '@/lib/utils';
+import Footer from '@/components/custom/footer';
 
 
 export async function generateMetadata({ params }: ParamsId): Promise<Metadata> {
@@ -33,6 +34,7 @@ export default async function DetailExperience({ params }: ParamsId) {
     <div>
       <DetailContainerComponent item={data} />
       <SkillContainerComponent item={data} />
+      <Footer/>
     </div>
   );
 }
