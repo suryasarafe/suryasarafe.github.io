@@ -18,17 +18,19 @@ export default async function BlogPage() {
     return <NotFoundContainerComponent />
   }
   const posts = await res.json();
-  return <section>
+  return <section className="bg-gray-100">
     <div className="h-40 p-10 text-center">
-      <h1 className="font-bold text-2xl">Welcome to my Blog</h1>
-      <p>Here where some unnecessary necessary thing that I share, learn or do</p>
+      <div className="p-5 border-gray-300 border rounded-xl w-100">
+        <h1 className="font-semibold text-2xl text-gray-700">My Blog Page</h1>
+        <p className="text-gray-700">Here where some unnecessary necessary thing that I share, learn or do</p>
+      </div>
     </div>
     <Separator className="w-[90vw] mx-auto" />
     <div className="p-10">
       <div className="container flex flex-col">
 
         <div>
-          <h1>Blog Posts</h1>
+          <h2 className="text-gray-700 font-semibold">Blog Posts</h2>
           {posts.items.map((post: any, i: number) => (
             <ItemBlog data={post} key={i} />
           ))}
