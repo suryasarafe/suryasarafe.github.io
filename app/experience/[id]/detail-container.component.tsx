@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Experience } from "@/lib/interface";
+import { scrollDown } from "@/app/(utils)/util";
 
 export default function DetailContainerComponent(data: { item: Experience }) {
   const [css, setCss] = useState('opacity-0');
@@ -25,9 +26,7 @@ export default function DetailContainerComponent(data: { item: Experience }) {
     }
 
   }, []);
-  const scrollDown = () => {
-    window.scrollBy({ top: window.outerHeight, behavior: "smooth" });
-  };
+ 
   return (
     <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
       <div className="hidden sm:block sm:absolute top-0 left-4 w-72 h-72 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>

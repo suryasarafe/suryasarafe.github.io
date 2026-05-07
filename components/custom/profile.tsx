@@ -3,8 +3,9 @@
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faGooglePlus, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import Image from "next/image"
-import Link from "next/link";
+import Image from "next/image";
+import { scrollDown } from "@/app/(utils)/util";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 
 export default function LoginContainerComponent() {
@@ -62,11 +63,15 @@ export default function LoginContainerComponent() {
             </div>
 
             <div className="flex justify-center">
-              <Link href="/experience" className="">
-                <div className="w-48 text-gray-400 rounded p-2 text-center shadow-md hover:shadow-lg transition-all hover:text-green-700">
+              <button onClick={scrollDown} className="flex flex-col items-center group no-underline">
+                
+                <div className="w-48 text-gray-400 rounded p-2 text-center shadow-md hover:shadow-lg transition-all group-hover:text-green-700">
                   Working Experience
                 </div>
-              </Link>
+                <div className="mt-4 animate-bounce text-green-400">
+                  <FontAwesomeIcon icon={faChevronDown} className="text-2xl text-green-500" />
+                </div>
+              </button>
             </div>
 
 

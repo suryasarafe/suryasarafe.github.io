@@ -1,11 +1,13 @@
 import Profile from "@/components/custom/profile";
-import BlogLinkButton from "@/components/custom/blog-link-button.component";
+import ExperienceContainer from "./(components)/experienceContainer.component";
+import Footer from "@/components/custom/footer";
 
 export default function Home() {
   return (
     <main>
       <Profile/>
-      <BlogLinkButton/>
+      <ExperienceContainer/>
+      <Footer/>
     </main>
   );
 }

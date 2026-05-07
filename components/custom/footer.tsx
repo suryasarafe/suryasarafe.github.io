@@ -1,13 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithub, faLinkedin, faGooglePlay, faGooglePlus } from "@fortawesome/free-brands-svg-icons"
+import { faGithub, faLinkedin, faGooglePlus, faBlogger } from "@fortawesome/free-brands-svg-icons"
 import Link from "next/link"
 export default function Footer() {
+  const year = new Date().getFullYear();
   return <section className="">
     <footer className="w-full h-10 bottom-0 border-t mb-4">
       <div className="flex flex-col md:flex-row md:justify-between mt-3 mx-4 text-center text-slate-400">
         <div>
           <Link href="/" className="hover:text-green-700 rounded-md px-2 transition-all">
-            Surya Akhri Ramadhan 2025
+            © {year} Surya's Project 
           </Link>
         </div>
 
@@ -32,9 +33,9 @@ export default function Footer() {
           </div>
 
           <div className="cursor-pointer hover:scale-110 hover:text-green-600">
-            <a href="https://play.google.com/store/apps/details?id=com.sae.money_manager&hl=en" target="_blank" className="text-sm">
-              <FontAwesomeIcon icon={faGooglePlay} height={24} width={24} />
-            </a>
+            <Link href="/blog" target="_blank" className="text-sm">
+              <FontAwesomeIcon icon={faBlogger} height={24} width={24} />
+            </Link>
           </div>
 
         </div>

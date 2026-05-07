@@ -1,7 +1,7 @@
 [
   {
     "id": 6,
-    "date": "Jan 2022",
+    "date": "Jan 2022 - Present",
     "position": "Freelance",
     "company": "Multiple Client and Employeer",
     "description": "I continuously learn and develop various applications using multiple libraries and frameworks, tailoring solutions to meet client needs efficiently and effectively.",
@@ -125,7 +125,7 @@
   
   {
     "id": 5,
-    "date": "Mar 2020",
+    "date": "April 2020 - Desember 2021",
     "position": "Full-stack Developer",
     "company": "PT. Appsensi Tiga Ribu",
     "description": "Assigned for developing Webpage for Manage User, Attendance Report then integrate it with the Realtime data using VueJs, NodeJs and FireStore, also responsible for develop and design Billing Report using NodeJs, BigQuery, Google Spreadsheets.",
@@ -260,7 +260,7 @@
   },
   {
     "id": 3,
-    "date": "January 2017",
+    "date": "Januari 2017 - Agustus 2017",
     "position": "Front-End Developer",
     "company": "PT. INDISMART KREATIF IDEA",
     "description": "PT. Indismart Kreatif Idea is a member of Smart City Community and Innovation Center - Intitut Teknologi Bandung. Assigned to design and develop the system and device internet of thing (IOT) for street lighting. Work in small team to develop Internet of Things(IoT) Product. Designing Web Dashboard that can monitor and controling device using AngularJS.",
@@ -283,7 +283,7 @@
   },
   {
     "id": 2,
-    "date": "March 2016",
+    "date": "March 2016 - September 2016",
     "position": "PHP Programer",
     "company": "PT. SWAMEDIA INFORMATIKA",
     "description": "Working in wide variety business applications such as Telecommunication System, Management Report System, Electrical System, Key Performance Indicator ( KPI ) System and Event Organizer. Assigned to developing Web App for e-commerce, known as TDA Mart using PHP and Code Igniter.",
@@ -312,7 +312,7 @@
   },
   {
     "id": 1,
-    "date": "June 2015",
+    "date": "July 2015 - January 2016",
     "position": "Web Developer",
     "company": "PT. TERRALOGIQ INTEGRASI SOLUSI",
     "description": "Terralogiq is a Tech Company and Google Cloud Partner that provides Geospatial, Location Intelligence and Mobility Solutions in Indonesia. Responsible developing Denpasar Smartcity(Demo version), Website for displaying location on map with border and POI (Point Of Interest), using JQuery and PHP.",
