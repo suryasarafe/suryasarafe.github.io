@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="flex flex-col md:flex-row md:justify-between mt-3 mx-4 text-center text-slate-400">
         <div>
           <Link href="/" className="hover:text-green-700 rounded-md px-2 transition-all">
-            © {year} Surya's Project 
+            © {year} Surya&apos;s Project 
           </Link>
         </div>
 
